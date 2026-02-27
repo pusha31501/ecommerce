@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
   const [mode, setMode] = useState("login");
-  const { signup, user, logout, login } = useContext(AuthContext);
+  const { signup, login } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const {
     register,
@@ -27,7 +27,6 @@ const Auth = () => {
     } else {
       setError(result.error);
     }
-    console.log(result);
   }
   return (
     <div className="mx-auto max-w-xl mt-10 bg-white/50 shadow-sm shadow-gray-900 p-4">

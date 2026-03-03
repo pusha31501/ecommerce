@@ -4,6 +4,7 @@ import Checkout from "./pages/Checkout";
 import Homes from "./pages/Homes";
 import Navbar from "./components/Navbar";
 import AuthProvider from "./context/AuthContext";
+import ProductDetails from "./components/ProductDetails";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Homes />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Routes>
       </AuthProvider>
     </div>

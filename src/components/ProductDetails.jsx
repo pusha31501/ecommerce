@@ -24,7 +24,7 @@ const ProductDetails = () => {
   }, [id]);
 
   return (
-    <div className="px-6 md:px-40 py-4 min-w-screen">
+    <div className="px-6 md:px-40 py-4 min-w-screen mt-45 sm:mt-20">
       <div className="mx-auto bg-white/30 p-4 rounded-sm shadow-sm shadow-gray-800 backdrop-blur-2xl flex flex-col lg:flex-row gap-4">
         <div className="w-full lg:w-[50%] overflow-hidden">
           <img

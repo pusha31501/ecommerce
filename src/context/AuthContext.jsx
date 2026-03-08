@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext(null);
 
@@ -8,7 +9,7 @@ export default function AuthProvider({ children }) {
       ? { email: localStorage.getItem("currentUserEmail") }
       : null,
   );
-
+  const navigate = useNavigate();
   const signup = (email, password) => {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
 
@@ -39,6 +40,7 @@ export default function AuthProvider({ children }) {
   const logout = () => {
     localStorage.removeItem("currentUserEmail");
     setUser(null);
+    navigate("/");
   };
   return (
     <AuthContext.Provider value={{ signup, user, logout, login }}>

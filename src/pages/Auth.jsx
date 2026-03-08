@@ -30,7 +30,7 @@ const Auth = () => {
   }
   return (
     <div className="mx-auto max-w-xl mt-10 bg-white/50 shadow-sm shadow-gray-900 p-4">
-      <div className="w-sm flex flex-col">
+      <div className="w-full sm:w-sm flex flex-col">
         <h1 className="font-bold text-xl">
           {mode === "signup" ? "Sign Up" : "Login"}
         </h1>

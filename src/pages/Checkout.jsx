@@ -20,7 +20,7 @@ const Checkout = () => {
   }
 
   return (
-    <div className="py-2 px-4 md:px-10 flex flex-col space-y-4 bg-white/50 backdrop-blur-md lg:max-w-4xl mx-auto my-2 shadow-sm shadow-gray-900">
+    <div className="py-2 px-4 mt-20 md:px-10 flex flex-col space-y-4 bg-white/50 backdrop-blur-md lg:max-w-4xl mx-auto my-2 shadow-sm shadow-gray-900">
       <h1 className="font-bold text-2xl">Check Out</h1>
       <div className="flex gap-2">
         <div className="flex-1 flex-col gap-4 bg-blue-200/40 p-4 rounded-md">

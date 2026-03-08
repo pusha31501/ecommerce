@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 const Homes = () => {
   const products = getProducts();
   return (
-    <div className="py-2 px-4 md:px-10 flex flex-col space-y-4 bg-white/50 backdrop-blur-md max-w-5xl mx-auto my-2 shadow-sm shadow-gray-900">
+    <div className="py-2 px-4 md:px-10 flex flex-col space-y-4 bg-white/50 backdrop-blur-md max-w-5xl mx-auto my-2 mt-20 shadow-sm shadow-gray-900">
       <div className="text-center pt-8">
         <h1 className="font-bold text-4xl text-orange-600">
           Welcome to ShopHub

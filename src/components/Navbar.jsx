@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthContext";
 const Navbar = () => {
   const { user, logout } = useAuth();
   return (
-    <nav className="bg-white/20 shadow-sm shadow-gray-500 py-4 px-6 md:px-40 flex flex-col gap-4 items-center justify-between md:flex-row backdrop-blur-md relative">
+    <nav className="bg-white/20 shadow-sm shadow-gray-500 py-4 px-6 md:px-40 flex flex-col gap-4 items-center justify-between md:flex-row backdrop-blur-md fixed top-0 left-0 z-10 w-full">
       <div>
         <Link to="/" className="font-bold text-3xl text-orange-600 underline">
           ShopHub
